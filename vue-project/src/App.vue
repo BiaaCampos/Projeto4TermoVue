@@ -6,7 +6,7 @@ let num = ref(0);
 
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body"
+    class="nav-teste navbar navbar-expand-lg navbar-dark bg-black border-body"
   >
     <div class="container-fluid">
       <routerLink to="/" class="navbar-brand">Star Wars</routerLink>
@@ -41,13 +41,22 @@ let num = ref(0);
 </template>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 56px;
+}
+
+.nav-teste{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 </style>
