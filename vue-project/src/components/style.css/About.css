@@ -1,0 +1,90 @@
+:root {
+    --background: #FFF;
+    --border: #ddd;
+    --color: #999;
+    --border-button: #da552f;
+    --background-button: #da552f;
+    --color-button: #FFF;
+    --color-text: #da552f;
+    --background-hover: #da552f;
+    --color-text-hover:#FFF;
+    
+    --background-header: #020004;
+    --background-button-dark-grey: #34343b;
+    --color-text-button: #deff1c;   
+    --new-border-button: #deff1c; 
+    --new-background-hover: #020004;
+    --new-color-text-hover:#deff1c;
+} 
+
+.main-list{
+    max-width: 700px;
+    margin: 110px auto 0;
+    padding: 0 20px;
+}
+
+.main-list article{
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main-list article p{
+    font-size: 16px;
+    color: var(--color);
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.main-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid var(--new-border-button);
+    background: none;
+    margin-top: 10px;
+    color: var(--color-text-button);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.main-list article a:hover{
+    background: var(--new-background-hover);
+    color:var(--new-color-text-hover);
+}
+
+.main-list .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-list .actions button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: var(--background-button-dark-grey);
+    color: var(--color-text-button);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.main-list .actions button:hover{
+    opacity: 0.7;
+}
+
+.main-list .actions button[disabled]{
+    opacity: 0.5;
+}

@@ -14,15 +14,18 @@
     text-align: left;
 }
 
-.p-image{
-    height: 40em;
+.p-image {
+    max-width: 100%;
+    height: 54em;
 }
 
+
 .escrita{
-    color: white;
-    justify-content: last baseline;
-    display: flex;
-    align-items: left;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: yellow;
 }
 
 .p-escrita {
@@ -33,8 +36,10 @@
     background-color: transparent;
     color: white;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     font-family: SF Distant Galaxy;
+    display: inline-block;
+    text-align: center;
 }
 
 .bottom{
@@ -44,8 +49,43 @@
     border-color: rgb(105, 2, 2);
 }
 
-.p-star-wars{
+.p-star-wars {
     color: white;
     text-shadow: 0 0 3px #FFFFFF;
     font-family: SF Distant Galaxy;
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    font-style:oblique;
+    text-shadow: 0 0 5px rgba(240, 20, 20, 0.5);
+}
+
+.quadrado{
+    bottom: 2em;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .p-escrita {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .p-escrita {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .p-escrita {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
 }
