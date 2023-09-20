@@ -1,4 +1,20 @@
+<script setup>
+import { onMounted, reactive, ref } from 'vue';
+// import ListPokemons from '../components/Listsw.vue';
 import '../components/style.css/About.css';
+let pokemons = reactive(ref());
+
+onMounted(() => {
+  fetch("https://swapi.dev/api/")
+    .then(response => response.json())
+    .then(response => {
+      pokemons.value = response.results;
+      console.log(response);
+    })
+})
+</script>
+
+
 
 <template>
   <div class="main-list">
@@ -62,6 +78,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Estilos CSS podem ser importados aqui */
-</style>
