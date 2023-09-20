@@ -5,9 +5,11 @@ let num = ref(0);
 </script>
 
 <template>
-  <nav class="nav-teste navbar navbar-expand-lg navbar-dark bg-black border-body">
+  <nav
+    class="nav-teste navbar navbar-expand-lg navbar-dark bg-black border-body"
+  >
     <div class="container-fluid">
-      <router-link to="/" class="navbar-brand">Star Wars</router-link>
+      <routerLink to="/" class="navbar-brand">Star Wars</routerLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -21,20 +23,21 @@ let num = ref(0);
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><router-link to="/" class="nav-link" aria-current="page">Home</router-link></li>
-          <li class="nav-item"><router-link to="/about" class="nav-link">About</router-link></li>
+          <li class="nav-item"><routerLink to="/" class="nav-link" aria-current="page">Home</routerLink></li>
+          <li class="nav-item"><routerLink to="/about" class="nav-link">About</routerLink></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="main">
-    <router-view></router-view>
-  </div>
+<div class="main">
+  <router-view></router-view>
+</div>
 
-  <footer class="bg-black text-light">
-    <div>Unimar | ADS | {{ new Date().getFullYear() }}</div>
-  </footer>
+<footer class="bg-black text-light">
+  <div>Unimar | ADS | {{ new Date().getFullYear() }}</div>
+</footer>
+
 </template>
 
 <style>

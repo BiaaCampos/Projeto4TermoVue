@@ -42,7 +42,7 @@ onMounted(() => {
               style="height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre Personagens</h5>
-              <a href="#" class="bottom btn btn-primary">clique aqui</a>
+              <router-link to="/person" class="bottom btn btn-primary">clique aqui</router-link>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ onMounted(() => {
               alt="..." style="height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre os Filmes</h5>
-              <a href="/AboutView" class="bottom btn btn-primary">clique aqui</a>
+              <router-link to="/films" class="bottom btn btn-primary">clique aqui</router-link>
             </div>
           </div>
         </div>
@@ -62,8 +62,8 @@ onMounted(() => {
               src="https://bcdn.lanetaneta.com/wp-content/uploads/2021/03/1616863822_835_Los-mejores-planetas-del-universo-de-Star-Wars-clasificados.5.jpeg"
               class="card-img-top" alt="..." style="height: 15rem;">
             <div class="card-body">
-              <h5 class="card-title">Tudo sobre os Mundos</h5>
-              <a href="#" class="bottom btn btn-primary">clique aqui</a>
+              <h5 class="card-title">Tudo sobre as Espécies</h5>
+              <router-link to="/species" class="bottom btn btn-primary">clique aqui</router-link>
             </div>
           </div>
         </div>
