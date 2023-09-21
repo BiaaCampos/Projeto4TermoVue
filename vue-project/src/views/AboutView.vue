@@ -15,7 +15,6 @@ onMounted(() => {
 </script>
 
 
-
 <template>
   <div class="main-list">
     <Loader v-if="!loading" />
@@ -40,7 +39,7 @@ onMounted(() => {
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -76,5 +75,5 @@ export default {
     },
   },
 };
-</script>
+</script> -->
 

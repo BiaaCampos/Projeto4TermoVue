@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 const pokemon = defineProps(["name", "url"]);
 console.log(pokemon);
 </script>
@@ -15,4 +15,4 @@ console.log(pokemon);
   </div>
 </template>
 
-<style></style>
+<style></style> -->

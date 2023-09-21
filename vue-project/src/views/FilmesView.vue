@@ -1,10 +1,10 @@
 <script>
-import '../components/style.css/About.css';
+import "../components/style.css/About.css"
 
 export default {
   data() {
     return {
-      films: [], // Resultados da pesquisa
+      films: [], // Resultados da pesquisa de filmes
       filmInfo: {},
       page: 1,
       loading: false,
@@ -16,7 +16,6 @@ export default {
   },
   methods: {
     async loadFilms(page) {
-      // Carregamento inicial dos filmes
       try {
         let response = await fetch(`https://swapi.dev/api/films/?page=${page}`);
         let data = await response.json();
@@ -52,27 +51,29 @@ export default {
 </script>
 
 <template>
-  <div class="main-list">
-    <Loader v-if="!loading" />
-    <div v-else>
-      <div class="search-container">
-        <input v-model="searchTerm" @input="searchFilms" placeholder="Pesquisar filmes">
-      </div>
-      <article v-for="(film, index) in films" :key="index">
-        <strong>{{ film.title }}</strong>
-        <p>
-          <strong>Episódio: </strong>
-          {{ film.episode_id }}
-        </p>
-        <p>
-          <strong>Dirigido por: </strong>
-          {{ film.director }}
-        </p>
-        <router-link :to="`/films/${film.url.substring(27, 29)}`">Acessar</router-link>
-      </article>
-      <div class="actions">
-        <button :disabled="filmInfo.previous === null" @click="prevPage">Anterior</button>
-        <button :disabled="filmInfo.next === null" @click="nextPage">Próximo</button>
+  <div class="background-star-wars">
+    <div class="main-list">
+      <Loader v-if="!loading" />
+      <div v-else>
+        <div class="title-search">
+          <p class="p-search-personagens">Filmes</p>
+        </div>
+        <div class="search-container">
+          <input class="input-search-personagens" v-model="searchTerm" @input="searchFilms" placeholder="Pesquisar filmes">
+        </div>
+        <article v-for="(film, index) in films" :key="index">
+          <p class="name-persona"><strong>{{ film.title }}</strong></p>
+          <p class="film-director">Diretor: {{ film.director }}</p>
+          <p class="film-producer">Produtor: {{ film.producer }}</p>
+          <p class="descricao">Para saber mais sobre esse personagem, clique no botão abaixo:</p>
+          <div class="router-div">
+            <a><router-link class="btn-5" :to="`/films/${film.url.substring(27, 29)}`">Detalhes</router-link></a>
+          </div>
+        </article>
+        <div class="actions">
+          <button :disabled="filmInfo.previous === null" @click="prevPage">Anterior</button>
+          <button :disabled="filmInfo.next === null" @click="nextPage">Próximo</button>
+        </div>
       </div>
     </div>
   </div>
