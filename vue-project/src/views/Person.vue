@@ -26,6 +26,9 @@ export default {
         setTimeout(() => {
           this.loading = true;
         }, 1000);
+
+        
+      //this.$route.params.id <-- usar isso para busca dinamica
       } catch (error) {
         console.error("Error loading personas:", error);
       }
@@ -55,6 +58,7 @@ export default {
     },
   },
 };
+
 </script>
 
 <template>
