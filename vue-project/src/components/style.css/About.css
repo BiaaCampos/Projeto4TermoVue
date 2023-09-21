@@ -1,90 +1,165 @@
-:root {
-    --background: #FFF;
-    --border: #ddd;
-    --color: #999;
-    --border-button: #da552f;
-    --background-button: #da552f;
-    --color-button: #FFF;
-    --color-text: #da552f;
-    --background-hover: #da552f;
-    --color-text-hover:#FFF;
-    
-    --background-header: #020004;
-    --background-button-dark-grey: #34343b;
-    --color-text-button: #deff1c;   
-    --new-border-button: #deff1c; 
-    --new-background-hover: #020004;
-    --new-color-text-hover:#deff1c;
-} 
+@import url('https://fonts.cdnfonts.com/css/sf-distant-galaxy');
 
-.main-list{
+.main-list {
     max-width: 700px;
-    margin: 110px auto 0;
+    margin: 0 auto 0;
     padding: 0 20px;
 }
 
-.main-list article{
-    background: var(--background);
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    padding: 20px;
+.main-list article {
+    background: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 25px;
     margin-bottom: 20px;
 }
 
-.main-list article p{
-    font-size: 16px;
-    color: var(--color);
-    margin-top: 5px;
-    line-height: 24px;
-}
-
-.main-list article a{
-    height: 42px;
-    border-radius: 5px;
-    border: 2px solid var(--new-border-button);
-    background: none;
-    margin-top: 10px;
-    color: var(--color-text-button);
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-}
-
-.main-list article a:hover{
-    background: var(--new-background-hover);
-    color:var(--new-color-text-hover);
-}
-
-.main-list .actions{
+.main-list .actions {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 56px;
 }
 
-.main-list .actions button{
+.main-list .actions button {
     padding: 10px;
     border-radius: 5px;
     border: 0;
-    background: var(--background-button-dark-grey);
-    color: var(--color-text-button);
+    background: gray;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.main-list .actions button[disabled]{
+.main-list .actions button[disabled] {
     opacity: 0.5;
     cursor: default;
 }
 
-.main-list .actions button:hover{
+.main-list .actions button:hover {
     opacity: 0.7;
 }
 
-.main-list .actions button[disabled]{
+.main-list .actions button[disabled] {
     opacity: 0.5;
+}
+
+.input-search-personagens {
+    width: 35em;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 2em;
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+}
+
+.input-search-personagens:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: rgb(255, 255, 255);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.p-search-personagens {
+    color: white;
+    font-family: SF Distant Galaxy;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-search {
+    margin: 0;
+    padding: 0;
+}
+
+.name-persona {
+    font-size: 30px;
+    font-family: SF Distant Galaxy;
+    color: rgb(226, 226, 226);
+    text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+}
+
+.descricao {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 10px 50px;
+    border: none;
+    background: transparent;
+    background: linear-gradient(
+      0deg,
+      rgb(214, 214, 214) 0%,
+      rgb(224, 224, 224) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn-5:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-5:before,
+  .btn-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000000;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+  
+  .btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .btn-5:hover:before,
+  .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
+.router-div {
+    display: flex;
+    justify-content: center;
+}
+
+.background-star-wars {
+    background-image: url("https://wallpapercave.com/wp/gfwPusm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
 }

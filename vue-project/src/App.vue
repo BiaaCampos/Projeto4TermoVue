@@ -46,7 +46,7 @@ let num = ref(0);
   padding: 0;
 }
 footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;

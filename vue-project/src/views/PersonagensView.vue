@@ -62,27 +62,27 @@ export default {
 </script>
 
 <template>
-  <div class="main-list">
-    <Loader v-if="!loading" />
-    <div v-else>
-      <div class="search-container">
-        <input v-model="searchTerm" @input="searchPersonas" placeholder="Pesquisar personagens">
-      </div>
-      <article v-for="(persona, index) in personas" :key="index">
-        <strong>{{ persona.name }}</strong>
-        <p>
-          <strong>planet: </strong>
-          {{ persona.homeworld }}
-        </p>
-        <p>
-          <strong>this: </strong>
-          {{ persona.url }}
-        </p>
-        <router-link :to="`/people/${persona.url.substring(29, 31)}`">Acessar</router-link>
-      </article>
-      <div class="actions">
-        <button :disabled="personaInfo.previous === null" @click="prevPage">Anterior</button>
-        <button :disabled="personaInfo.next === null" @click="nextPage">Próximo</button>
+  <div class="background-star-wars">
+    <div class="main-list">
+      <Loader v-if="!loading" />
+      <div v-else>
+        <div class="title-search">
+          <p class="p-search-personagens">Personagens</p>
+        </div>
+        <div class="search-container">
+          <input class="input-search-personagens" v-model="searchTerm" @input="searchPersonas" placeholder="Pesquisar personagens">
+        </div>
+        <article v-for="(persona, index) in personas" :key="index">
+          <p class="name-persona"><strong>{{ persona.name }}</strong></p>
+          <p class="descricao">Para saber mais sobre esse personagem, clique no botão abaixo:</p>
+          <div class="router-div">
+            <a><router-link class="btn-5" :to="`/people/${persona.url.substring(29, 31)}`">Acessar</router-link></a>
+          </div>
+        </article>
+        <div class="actions">
+          <button :disabled="personaInfo.previous === null" @click="prevPage">Anterior</button>
+          <button :disabled="personaInfo.next === null" @click="nextPage">Próximo</button>
+        </div>
       </div>
     </div>
   </div>
