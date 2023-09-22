@@ -1,6 +1,5 @@
 <script>
 import "../components/style.css/About.css"
-import axios from 'axios';
 
 export default {
   data() {

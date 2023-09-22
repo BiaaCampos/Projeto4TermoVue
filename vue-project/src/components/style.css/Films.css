@@ -1,0 +1,97 @@
+/* Estilos para a div de fundo */
+.backgroud-details-films {
+    background-image: url("https://wallpapercave.com/wp/gfwPusm.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilos para o título "Detalhes do Filme" */
+  .details-films {
+    font-size: 35px;
+    font-family: 'SF Distant Galaxy', sans-serif;
+    color: #e2e2e2;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    text-decoration: underline;
+  }
+  
+  /* Estilos para a div de detalhes */
+  .div-details {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 65vh;
+  }
+  
+  /* Estilos para os parágrafos de detalhes */
+  .p-details-films {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Estilos para o título do filme */
+  .name-films {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  /* Estilos para o botão "Voltar" */
+  .btn-6 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    background: linear-gradient(0deg, rgb(214, 214, 214) 0%, rgb(224, 224, 224) 100%);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn-6:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-6:before,
+  .btn-6:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000000;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+  
+  .btn-6:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .btn-6:hover:before,
+  .btn-6:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
+.p-details-films-2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+  

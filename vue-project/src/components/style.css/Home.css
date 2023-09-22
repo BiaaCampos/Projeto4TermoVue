@@ -62,8 +62,59 @@
 
 .quadrado{
     bottom: 2em;
-    margin-bottom: 3em;
 }
+
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 10px 88px;
+    border: none;
+    background: transparent;
+    background: linear-gradient(
+      0deg,
+      rgb(214, 214, 214) 0%,
+      rgb(224, 224, 224) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn-5:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-5:before,
+  .btn-5:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000000;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+  
+  .btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .btn-5:hover:before,
+  .btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
 
 /* RESPONSIVIDADE */
 

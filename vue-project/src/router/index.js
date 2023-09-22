@@ -20,14 +20,19 @@ const router = createRouter({
       component: () => import('../views/PersonagensView.vue')
     },
     {
+      path: '/people/:id',
+      name: 'personagem-detalhes',
+      component: () => import('../views/DetailsPersonagem.vue')
+    },
+    {
       path: '/films',
       name: 'films',
       component: () => import('../views/FilmesView.vue')
     },
     {
-      path: '/people/:id',
-      name: 'personagem-detalhes',
-      component: () => import('../views/DetailsPersonagem.vue')
+      path: '/films/:id',
+      name: 'filmsDetails',
+      component: () => import('../views/FilmsDetails.vue')
     },
     {
       path: '/planet',

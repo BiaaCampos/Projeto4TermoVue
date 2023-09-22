@@ -24,7 +24,6 @@ let num = ref(0);
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><routerLink to="/" class="nav-link" aria-current="page">Home</routerLink></li>
-          <li class="nav-item"><routerLink to="/about" class="nav-link">About</routerLink></li>
         </ul>
       </div>
     </div>
@@ -46,7 +45,7 @@ let num = ref(0);
   padding: 0;
 }
 footer{
-  position: fixed;
+  position:sticky;
   bottom: 0;
   width: 100%;
   display: flex;

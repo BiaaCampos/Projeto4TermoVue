@@ -1,0 +1,93 @@
+.backgroud-details-personagem {
+    /* Tornar a imagem de fundo em tela cheia */
+    background-image: url("https://wallpapercave.com/wp/gfwPusm.jpg");
+    background-size: cover; /* Cobrir toda a tela */
+    background-position: center; /* Centralizar a imagem */
+    height: 92vh; /* Altura da tela inteira */
+    display: flex; /* Para alinhar o conteúdo verticalmente */
+    align-items: center; /* Centralizar verticalmente o conteúdo */
+    justify-content: center; /* Centralizar horizontalmente o conteúdo */
+  }
+
+.details-planet{
+    font-size: 35px;
+    font-family: SF Distant Galaxy;
+    color: rgb(226, 226, 226);
+    text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    text-decoration:underline;
+}
+
+.div-details {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para tornar o texto legível */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centralizar o texto */
+    width: 65vh;
+}
+
+.p-details-planet{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.name-planet{
+    text-transform: uppercase;
+    text-decoration:underline;
+}
+
+.btn-6 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    background: linear-gradient(
+      0deg,
+      rgb(214, 214, 214) 0%,
+      rgb(224, 224, 224) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn-6:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .btn-6:before,
+  .btn-6:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #000000;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+  
+  .btn-6:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .btn-6:hover:before,
+  .btn-6:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
