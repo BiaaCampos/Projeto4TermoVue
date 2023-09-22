@@ -30,17 +30,17 @@ onMounted(() => {
               alt="..." style="height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre Star Wars</h5>
-              <a href="#" class="bottom btn btn-primary">clique aqui</a>
+              <a href="#" class="btn-5">clique aqui</a>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="quadrado card" style="width: 18rem; height: 18rem;">
             <img src="https://cinepop.com.br/wp-content/uploads/2021/04/starwars.jpg" class="card-img-top" alt="..."
-              style="height: 15rem;">
+              style="height: 11rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre Personagens</h5>
-              <router-link to="/person" class="bottom btn btn-primary">clique aqui</router-link>
+              <router-link to="/person" class="btn-5">clique aqui</router-link>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ onMounted(() => {
               alt="..." style="height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre os Filmes</h5>
-              <router-link to="/films" class="bottom btn btn-primary">clique aqui</router-link>
+              <router-link to="/films" class="btn-5">clique aqui</router-link>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ onMounted(() => {
               class="card-img-top" alt="..." style="height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Tudo sobre os Planetas</h5>
-              <router-link to="/planet" class="bottom btn btn-primary">clique aqui</router-link>
+              <router-link to="/planet" class="btn-5">clique aqui</router-link>
             </div>
           </div>
         </div>

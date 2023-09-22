@@ -17,7 +17,7 @@
 .main-list .actions {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 56px;
+    /* margin-bottom: 56px; */
 }
 
 .main-list .actions button {
@@ -162,4 +162,99 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
+}
+
+/* RESPONSIVIDADE */
+
+/* Estilos para telas médias */
+@media screen and (max-width: 768px) {
+    .main-list {
+        padding: 0 10px; /* Reduza o padding lateral */
+    }
+
+    .main-list article {
+        padding: 20px; /* Aumente o padding interno */
+    }
+
+    .main-list .actions {
+        flex-direction: column; /* Alinhe os botões verticalmente */
+        align-items: center; /* Centralize os botões */
+        margin-bottom: 20px; /* Reduza a margem inferior */
+    }
+
+    .main-list .actions button {
+        width: 100%; /* Os botões ocupam a largura total */
+        margin-bottom: 10px; /* Adicione espaço entre os botões */
+    }
+
+    .input-search-personagens {
+        width: 100%; /* Ocupa a largura total */
+        max-width: none; /* Não define largura máxima */
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        height: 2.5em; /* Aumenta a altura para melhorar a usabilidade em telas menores */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Reduz o espaçamento interno */
+    }
+
+    .search-container {
+        margin-bottom: 10px;
+        flex-direction: column; /* Alinha verticalmente para melhorar a usabilidade em telas menores */
+    }
+
+    .p-search-personagens {
+        font-size: 40px; /* Reduz o tamanho da fonte */
+    }
+
+    .name-persona {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+    }
+
+    .descricao {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .main-list {
+        padding: 0 10px; /* Reduza ainda mais o padding lateral */
+    }
+
+    .main-list article {
+        padding: 15px; /* Reduza o padding interno */
+    }
+
+    .main-list .actions {
+        margin-bottom: 10px; /* Reduza a margem inferior */
+    }
+
+    .main-list .actions button {
+        padding: 8px; /* Reduza o padding dos botões */
+        font-size: 14px; /* Reduza o tamanho da fonte dos botões */
+    }
+
+    .input-search-personagens {
+        height: 2.2em; /* Ajuste de altura */
+        font-size: 14px; /* Reduz tamanho da fonte */
+        padding: 6px; /* Reduz padding */
+    }
+
+    .search-container {
+        margin-bottom: 5px; /* Reduz margem inferior */
+    }
+
+    .p-search-personagens {
+        font-size: 30px; /* Reduz tamanho da fonte */
+    }
+
+    .name-persona {
+        font-size: 20px; /* Reduz tamanho da fonte */
+    }
+
+    .descricao {
+        font-size: 14px; /* Reduz tamanho da fonte */
+    }
 }

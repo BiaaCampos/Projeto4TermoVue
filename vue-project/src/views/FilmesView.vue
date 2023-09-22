@@ -65,7 +65,7 @@ export default {
           <p class="name-persona"><strong>{{ film.title }}</strong></p>
           <p class="film-director">Diretor: {{ film.director }}</p>
           <p class="film-producer">Produtor: {{ film.producer }}</p>
-          <p class="descricao">Para saber mais sobre esse personagem, clique no botão abaixo:</p>
+          <p class="descricao">Para saber mais sobre esse filme, clique no botão abaixo:</p>
           <div class="router-div">
             <a><router-link class="btn-5" :to="`/films/${film.url.match(/\d+/g)}`">Detalhes</router-link></a>
           </div>
