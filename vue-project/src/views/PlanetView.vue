@@ -67,7 +67,7 @@ export default {
           <p class="name-persona"><strong>{{ planet.name }}</strong></p>
           <p class="descricao">Para saber mais sobre esse planeta, clique no botão abaixo:</p>
           <div class="router-div">
-            <a><router-link class="btn-5" :to="`/planet/${planet.url.substring(29, 31)}`">Acessar</router-link></a>
+            <a><router-link class="btn-5" :to="`/planet/${planet.url.match(/\d+/g)}`">Acessar</router-link></a>
           </div>
         </article>
         <div class="actions">
