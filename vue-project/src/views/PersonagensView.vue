@@ -40,13 +40,6 @@ export default {
       this.loadPersonas(this.page + 1);
     },
     async searchPersonas() {
-      // Pesquisa de personagens
-      // if (this.searchTerm.trim() === "") {
-      //   // Se o campo de pesquisa estiver vazio, carregue todos os personagens novamente
-      //   this.loadPersonas(1);
-      //   return;
-      // }
-
       try {
         let response = await fetch(`https://swapi.dev/api/people/?search=${this.searchTerm}`);
         let data = await response.json();
