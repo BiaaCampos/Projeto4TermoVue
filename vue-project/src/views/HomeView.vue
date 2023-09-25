@@ -2,7 +2,6 @@
 import { onMounted, reactive, ref } from 'vue';
 import '../components/style.css/Home.css';
 
-let pokemons = reactive(ref());
 
 onMounted(() => {
   fetch("https://swapi.dev/api/")
